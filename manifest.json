@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "My first chrome extension",
+  "description": "This extension shows a the name of the site opened",
+  "version": "1.0",
+  
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs"
+  ]
+}
